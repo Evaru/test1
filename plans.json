@@ -1,0 +1,17 @@
+[
+    {
+    "name":"licenseplan #1",
+    "number":"1",
+    "price":"13"
+},
+{
+    "name":"licenseplan #2",
+    "number":"2",
+    "price":"22"
+},
+{
+    "name":"licenseplan #3",
+    "number":"3",
+    "price":"34"
+}
+]

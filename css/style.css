@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "Bebas";
+  src: url(../fonts/bebas.ttf);
+}
+
+body,
+html {
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 380px;
+  width: 370px;
+  border: 8px solid #ebebeb;
+  background: #f8f8f8;
+  margin-top: 100px;
+  padding: 0 10px;
+  color: #818181;
+}
+
+main strong,
+main p {
+  margin: 0;
+}
+
+main .plans {
+  border-bottom: 2px solid #e7e7e7;
+  margin-top: 10px;
+}
+
+main .plans .plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+main .plans .plan .plan__name {
+  text-transform: uppercase;
+  font-family: "Bebas";
+}
+
+main .plans .plan .plan__price {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  margin-top: 0.625em;
+}
+
+main .plans .plan .plan__price strong {
+  margin-right: 10px;
+}
+
+main .plans .radio__control {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 4px solid #36668f;
+  margin-right: 10px;
+}
+
+main .plans input[type="radio"] {
+  opacity: 0;
+}
+
+main .plans input[type="radio"]:checked + .radio__control {
+  background: radial-gradient(#0294bf 40%, rgba(255, 0, 0, 0) 41%);
+}
+
+main .plans .active {
+  background: #ebf4f7;
+  border: 1px solid #cde2ea;
+}
+
+main .number {
+  border-bottom: 2px solid #e7e7e7;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main .number #numberLisenses {
+  border: 1px solid #b3cbf2;
+  outline: #b3cbf2;
+  cursor: pointer;
+}
+
+main .total {
+  padding: 20px 0;
+  text-align: center;
+}
+
+main .total .total__price {
+  font-family: "Bebas";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .total .total__price strong {
+  color: #3e8ead;
+  margin-left: 10px;
+}
+
+main .total .total__price sup {
+  font-size: 10px;
+}
+
+main .total .total__plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #3e8ead;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+main .total .total__plan p {
+  margin-right: 10px;
+}
+
+main .total button {
+  background: #33a845;
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px 40px;
+  margin: 15px 0;
+}
+
+main .total button:hover {
+  background: orange;
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    height: 380px;
+    width: 300px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
