@@ -3,6 +3,7 @@ const total = document.getElementsByClassName('total')
 const totalPrice = document.getElementsByClassName('total__price')[0]
 const selectedPlan = document.getElementsByClassName('total__plan')[0]
 const numberLisenses = document.getElementById('numberLisenses')
+const button = document.getElementsByTagName('button')[0]
 
 const json = new Request('plans.json')
 
@@ -92,4 +93,9 @@ let getTotal = () =>{
   });
 }
 
+submitPlan =() =>{
+  document.location.href='https://khabarovsk.hh.ru/resume/f01801cfff03a1a3390039ed1f45477562544b'
+}
+
+button.onclick = submitPlan
 getPlans()
